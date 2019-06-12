@@ -12,6 +12,10 @@ module.exports = function () {
             index: {
                 unique: true
             }
+        },
+        nascimento: {
+            type: Date,
+            required: true
         }
     });
     return mongoose.model('Usuario', schema);
